@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><title>iframes</title>
+    <body>
+<h3>frame1</h3>
+<div>
+
+    <iframe height="300px" width="400px" src="https://app.kodnest.com/"
+name="iframe1"></iframe>
+<h2>frame2</h2>
+<iframe hheight="300px" width="400px" src="https://app.kodnest.com/"
+name="iframe2"></iframe>
+</div>
+<div>
+<h3>frame3</h3>
+<iframe srcdoc="<h1>hello</h1>" height="400px" width="300px" name="frame3"></iframe>
+    <!----srcdoc: if you want to load htmlcode inside the i frame  at that time we have to use srcdoc-->>
+</div>
+<div>    
+<!---- when we click the hypertext in frame1 we have display that in frame2 at that time we have to write the code like this-->
+<h3>frame4</h3>
+    <iframe srcdoc ="<a href = 'https://app.kodnest.com/' target='frame5'>code</a>"
+    height="300" width="300" name="frame4"></iframe>
+     
+<h3>frame5</h3>
+     <iframe>frame5</iframe>
+     </div>
+     </body>   

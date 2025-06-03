@@ -1,0 +1,20 @@
+<form>
+    <label>Name:</label>
+    <input type="text"  id=name 
+    pattern="ccc">
+    <!----[]is for charcterset and {}is for range or min&max characters--->
+<!----password valdiation--><!---- (dot). means all charctesr and nubers are allowed/there is no specific and  (coma), means infinite-->
+    <label>Password</label>
+    <input type="text" pattern="^.{5}$"><br><br>
+    <label>password</label>
+    <input type="^[a-zA-Z/d]#*{5,}$">
+    <label>password</label>
+    <input type="^(?=.*[a-z])(?=.*[A-Z]{2})(?=.*[0-9])(?=.*{@-/#}){8,}$">
+    <button>submit</button>
+<!--email validation--->
+<label for="email">Email</label>
+<input type="email">
+</form>
+    <!---- minimun length must be 5 maximum there is na limit: "^.{5,}"
+    exactly length must be 5 "^.{5}" and \d means nuber-->
+    <!--(?=.*) at least 1 -- and in email validation type=email and pattern  both are perform same task validation-->
